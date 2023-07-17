@@ -1,1 +1,3 @@
-console.log('niggr');
+import load from "./load";
+
+load();

@@ -1,1 +1,1 @@
-console.log("niggr");
+(()=>{"use strict";!function(){const t=document.getElementById("content"),e=document.createElement("h1");e.textContent="Wow this is such a good restaurant",t.appendChild(e)}()})();
