@@ -29,6 +29,7 @@ const contactBtn = document.createElement('button');
 contactBtn.id = 'contactBtn';
 contactBtn.innerHTML = 'Contact Us';
 
+
 content.appendChild(navbar);
 content.appendChild(mainContent);
 navbar.appendChild(title);

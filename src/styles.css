@@ -28,18 +28,19 @@ body{
 }
 
 .mainContent{
-
-    
     display: grid;
     place-items: center;
 }
 
 .currentContent{
-    z-index: 1;
     color: wheat;
 }
-
-
+.currentContent>h1{
+    font-size: 3rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center;
+}
 .navbar{
     color: #e1d5ce;
     display: grid;
@@ -67,10 +68,22 @@ body{
     margin: 0;
     padding: 0;
     background: none;
-    color: #e6b87e;
-    /*wheat color when not selected*/
+    color: #e1d5ce;
     font: inherit;
     font-size: 1.2rem;
     cursor: pointer;
 }
+.navButtonContainer>button.clicked{
+    color: rgb(243, 180, 63);
+}
 
+@media(max-width: 750px){
+    .container{
+        grid-template-rows: 150px 1fr;
+    }
+    .navbar{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+}
