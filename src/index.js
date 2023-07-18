@@ -43,5 +43,5 @@ function handleButtonClick(event) {
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', handleButtonClick);
   };
-  console.log(buttons);
 
+  homeBtn.click();
