@@ -16,12 +16,29 @@ input,select{vertical-align:middle}
 
 body{
     font-family: 'Ysabeau Office', serif;
+    background: url('./assets/gyroBackground.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 .container{
     height: 100vh;
     display: grid;
     grid-template-rows: 70px 1fr;
 }
+
+.mainContent{
+
+    
+    display: grid;
+    place-items: center;
+}
+
+.currentContent{
+    z-index: 1;
+    color: wheat;
+}
+
 
 .navbar{
     color: #e1d5ce;
@@ -42,3 +59,18 @@ body{
     grid-template-columns: repeat(3, 100px);
     justify-content: right;
 }
+
+.navButtonContainer>button{
+    display: grid;
+    justify-content: left;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: #e6b87e;
+    /*wheat color when not selected*/
+    font: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+

@@ -14,6 +14,9 @@ title.classList.add('title');
 const navButtons = document.createElement('div');
 navButtons.classList.add('navButtonContainer');
 
+const mainContent = document.createElement('div');
+mainContent.classList.add('mainContent');
+
 const homeBtn = document.createElement('button'); 
 homeBtn.id = 'homeBtn';
 homeBtn.innerHTML = 'Home';
@@ -27,6 +30,7 @@ contactBtn.id = 'contactBtn';
 contactBtn.innerHTML = 'Contact Us';
 
 content.appendChild(navbar);
+content.appendChild(mainContent);
 navbar.appendChild(title);
 navbar.appendChild(navButtons);
 navButtons.appendChild(homeBtn);
