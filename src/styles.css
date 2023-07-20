@@ -71,11 +71,11 @@ h1{
     padding-right: 4vw;
     text-align: center;
 }
-.menu{
+.menu, .contact{
     justify-items: center;
     align-items: start;
 }
-.currentContentMenu{
+.currentContentMenu, .currentContentContact{
     padding-top: 50px;
     padding-bottom: 50px;
     width: 80%;
@@ -104,6 +104,15 @@ h1{
 }
 .menuItem>p{
     font-size: 1.3rem;
+}
+
+.currentContentContact{
+    place-items: center;
+}
+.map{
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
 }
 .navbar{
     color: #e1d5ce;
