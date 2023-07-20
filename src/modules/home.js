@@ -3,7 +3,7 @@ function loadHome(){
     const mainContent = document.querySelector('.mainContent');
 
     const currentContent = document.createElement('div');
-    currentContent.classList.add('currentContent');
+    currentContent.classList.add('currentContentHome');
     
     const mainText = document.createElement('h1');
     mainText.innerText = "The best Greek food in town!"

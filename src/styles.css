@@ -29,10 +29,11 @@ body{
 
 .mainContent{
     display: grid;
-    place-items: center;
+    justify-items: center;
+    align-items: center;
 }
 
-.currentContent{
+.currentContentHome{
     color: wheat;
     display: grid;
     place-items: center;
@@ -41,7 +42,7 @@ body{
     height: 70%;
     gap: 10px;
 }
-.currentContent>button{
+.currentContentHome>button{
     align-self: start;
     border: none;
     margin: 0;
@@ -57,17 +58,28 @@ body{
     cursor: pointer;
     transition: transform 0.25s ease;
 }
-.currentContent>button:hover{
+.currentContentHome>button:hover{
     background: #394944;
 }
-.currentContent>button:active{
+.currentContentHome>button:active{
     transform: scale(0.9);
 }
-.currentContent>h1{
+h1{
+    color: wheat;
     font-size: 3rem;
     padding-left: 4vw;
     padding-right: 4vw;
     text-align: center;
+}
+.menu{
+    justify-items: center;
+    align-items: start;
+}
+.currentContentMenu{
+    padding-top: 50px;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 50px 1fr;
 }
 .navbar{
     color: #e1d5ce;

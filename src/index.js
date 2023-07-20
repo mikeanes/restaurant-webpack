@@ -7,6 +7,7 @@ load();
 
 function resetPage(){
     const content = document.querySelector('.mainContent');
+    content.classList.remove('menu');
     content.innerHTML = '';
 }
 
