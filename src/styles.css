@@ -178,3 +178,8 @@ h1{
         justify-items: center;
     }
 }
+@media(max-width: 600px){
+    .map{
+        width: 100%;
+    }
+}
