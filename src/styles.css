@@ -77,9 +77,33 @@ h1{
 }
 .currentContentMenu{
     padding-top: 50px;
+    padding-bottom: 50px;
     width: 80%;
     display: grid;
+    gap: 1.7rem;
     grid-template-rows: 50px 1fr;
+}
+.menuItemContainer{
+    display: grid;
+    gap: 1.7rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 250px;
+    grid-auto-rows: 250px;
+}
+.menuItem{
+    background-color: #00000072;
+    border-radius: 10px;
+    color: wheat;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.menuItem>h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.menuItem>p{
+    font-size: 1.3rem;
 }
 .navbar{
     color: #e1d5ce;
@@ -92,6 +116,8 @@ h1{
 }
 
 .title{
+    text-align: left;
+    padding: 0;
     font-size: 3rem;
 }
 
