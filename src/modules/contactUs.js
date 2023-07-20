@@ -13,7 +13,7 @@ function loadContact(){
     googleMap.height = '450';
     googleMap.style.border = '0';
     googleMap.allowFullscreen = true;
-    googleMap.loading = 'lazy';
+    
 
     mainContent.appendChild(currentContent);
     currentContent.appendChild(mainText);

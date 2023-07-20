@@ -34,6 +34,34 @@ body{
 
 .currentContent{
     color: wheat;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50px 2fr;
+    height: 70%;
+    gap: 10px;
+}
+.currentContent>button{
+    align-self: start;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2px;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    background: #5c746c;
+    color: #e1d5ce;
+    font: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+.currentContent>button:hover{
+    background: #394944;
+}
+.currentContent>button:active{
+    transform: scale(0.9);
 }
 .currentContent>h1{
     font-size: 3rem;
@@ -75,6 +103,22 @@ body{
 }
 .navButtonContainer>button.clicked{
     color: rgb(243, 180, 63);
+}
+
+.infoBubble{
+    font-size: 1.4rem;
+    border-radius: 10px;
+    height: 70%;
+    width: 80%;
+    background: #00000072;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+}
+.infoBubble>div{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50px 1fr;
 }
 
 @media(max-width: 750px){
